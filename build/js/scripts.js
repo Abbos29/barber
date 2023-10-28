@@ -48,3 +48,46 @@ function fixedNav() {
 }
 window.addEventListener('scroll', fixedNav)
 
+
+
+
+
+
+
+
+// SWIPER
+
+const swiperSlider = new Swiper('.slider__swiper', {
+
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+
+    initialSlide: 3,
+    centeredSlides: true,
+    grabCursor: true,
+    slidesPerView: 1.3,
+    spaceBetween: 20,
+    loop: true,
+
+
+    breakpoints: {
+        1450: {
+            slidesPerView: 3.9,
+            spaceBetween: 40,
+        },
+        992: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+
+        },
+        768: {
+            slidesPerView: 2,
+        }
+    }
+});

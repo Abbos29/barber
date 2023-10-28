@@ -164,7 +164,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  padding: clamp(4.375rem, 3.774rem + 2.83vw, 6.25rem) 0;
+  margin: clamp(4.375rem, 3.701rem + 2.91vw, 6.25rem) 0;
 }
 
 .section-title {
@@ -194,6 +194,12 @@ section {
   width: 150%;
   height: 1px;
   background: #FAD686;
+}
+
+.container-max {
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 @-webkit-keyframes fade {
@@ -357,8 +363,13 @@ nav {
   height: 100vh;
 }
 
+.hero {
+  padding-top: 2%;
+  margin: 1% 0;
+}
+
 .hero__wrapper {
-  padding: 70px 0;
+  padding: 0;
 }
 
 .hero__title {
@@ -389,7 +400,7 @@ nav {
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center;
-  margin: 120px auto 60px;
+  margin: 3% auto;
 }
 
 .hero__text {
@@ -407,10 +418,16 @@ nav {
 
 .case-2 {
   background: #4646465E;
+  padding: 80px 0;
 }
 
 .case-2 .case__wrapper {
   grid-template-columns: 1.3fr 1fr;
+}
+
+.case-2 .case__img {
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .case-2 .case__img::after {
@@ -466,6 +483,16 @@ nav {
   background-position: center;
 }
 
+.barbers {
+  background: #4646465E;
+  padding: 50px 0;
+}
+
+.barbers__wrapper {
+  background: #000;
+  padding: 30px;
+}
+
 .barbers__title {
   padding-bottom: 40px;
 }
@@ -510,6 +537,103 @@ nav {
 
 .barbers__box-link:hover svg path {
   stroke: #FAD686;
+}
+
+.slider__swiper {
+  padding: 40px 0;
+}
+
+.slider__swiper-wrapper .swiper-slide-active,
+.slider__swiper-wrapper .swiper-slide-next,
+.slider__swiper-wrapper .swiper-slide-prev {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slider__swiper-wrapper .swiper-slide-active img,
+.slider__swiper-wrapper .swiper-slide-next img,
+.slider__swiper-wrapper .swiper-slide-prev img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  scale: 1;
+}
+
+.slider__slide {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.slider__img {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  scale: 0.9;
+  max-width: 100%;
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  background-color: #FAD686 !important;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.swiper-pagination-bullet-active {
+  width: 20px;
+  background-color: #FAD686;
+}
+
+.swiper-button-prev {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #fad5868f;
+  padding: 12px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  left: 5%;
+}
+
+.swiper-button-prev::after {
+  content: none;
+}
+
+.swiper-button-next {
+  width: 50px;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  background-color: #fad5868f;
+  padding: 12px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  right: 5%;
+}
+
+.swiper-button-next::after {
+  content: none;
 }
 
 @media (max-width: 991.98px) {
@@ -669,6 +793,13 @@ nav {
   .barbers__inner {
     grid-template-columns: 1fr 1fr;
   }
+
+  .slider__swiper-wrapper .swiper-slide-next,
+  .slider__swiper-wrapper .swiper-slide-prev {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -678,6 +809,14 @@ nav {
 
   .menu__item-link {
     font-size: 18px;
+  }
+
+  .hero {
+    margin: 30% 0;
+  }
+
+  .hero__link {
+    margin: 10% auto;
   }
 
   .case__title {
@@ -690,5 +829,15 @@ nav {
 
   .barbers__inner {
     grid-template-columns: 1fr;
+  }
+
+  .swiper-button-prev {
+    width: 40px;
+    height: 40px;
+  }
+
+  .swiper-button-next {
+    width: 40px;
+    height: 40px;
   }
 }
