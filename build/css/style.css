@@ -164,7 +164,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 section {
-  margin: clamp(4.375rem, 3.701rem + 2.91vw, 6.25rem) 0;
+  padding: clamp(4.375rem, 3.701rem + 2.91vw, 6.25rem) 0;
 }
 
 .section-title {
@@ -291,6 +291,8 @@ nav {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-text-stroke: 0px #FAD686;
+  text-shadow: #FAD686 0 0 15px;
 }
 
 .logo img {
@@ -347,6 +349,8 @@ nav {
 
 .menu__item-link:hover {
   color: #FAD686;
+  -webkit-text-stroke: 0px #FAD686;
+  text-shadow: #FAD686 0 0 15px;
 }
 
 .burger {
@@ -356,7 +360,7 @@ nav {
 }
 
 .top {
-  background-image: url(../img/hero-bg.png);
+  background-image: url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -382,6 +386,9 @@ nav {
   font-size: clamp(1.313rem, 0.661rem + 2.82vw, 3.125rem);
   text-transform: uppercase;
   letter-spacing: 3px;
+  -webkit-text-stroke: 2px #FAD686;
+  text-shadow: #FAD686 0 0 25px;
+  color: transparent;
 }
 
 .hero__link {
@@ -401,6 +408,8 @@ nav {
   letter-spacing: 3px;
   text-align: center;
   margin: 3% auto;
+  -webkit-text-stroke: 1px #FAD686;
+  text-shadow: #FAD686 0 0 25px;
 }
 
 .hero__text {
@@ -414,10 +423,14 @@ nav {
   max-width: 660px;
   width: 100%;
   margin: 0 auto;
+  -webkit-text-stroke: 1px white;
+  text-shadow: white 0 0 25px;
+  color: transparent;
 }
 
 .case-2 {
-  background: #4646465E;
+  background-color: #000 !important;
+  padding-top: 100px !important;
   padding: 80px 0;
 }
 
@@ -436,6 +449,7 @@ nav {
 }
 
 .case {
+  background: rgba(70, 70, 70, 0.1);
   overflow: hidden;
 }
 
@@ -481,10 +495,12 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  -webkit-animation: rotate 20s linear infinite;
+          animation: rotate 20s linear infinite;
 }
 
 .barbers {
-  background: #4646465E;
+  background: rgba(70, 70, 70, 0.1);
   padding: 50px 0;
 }
 
@@ -506,9 +522,43 @@ nav {
   gap: 30px 30px;
 }
 
+.barbers__item {
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.barbers__item:hover .barbers__info {
+  bottom: 0;
+}
+
 .barbers__img img {
   max-width: 100%;
   width: 100%;
+}
+
+.barbers__info {
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: absolute;
+  left: 0;
+  bottom: -150%;
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.555);
+}
+
+.barbers__info h3 {
+  font-size: 25px;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+
+.barbers__info p {
+  line-height: 1.3;
 }
 
 .barbers__box {
@@ -558,15 +608,20 @@ nav {
   -o-transition: all 0.3s;
   transition: all 0.3s;
   scale: 1;
+  opacity: 1;
 }
 
 .slider__slide {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+  -webkit-backdrop-filter: brightness(60%);
+          backdrop-filter: brightness(60%);
+  background: #000;
 }
 
 .slider__img {
+  opacity: 0.1;
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
@@ -634,6 +689,121 @@ nav {
 
 .swiper-button-next::after {
   content: none;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.price {
+  background: rgba(70, 70, 70, 0.1);
+}
+
+.price__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px 30px;
+  margin-top: 30px;
+}
+
+.price__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  width: 100%;
+  background-color: #000;
+}
+
+.price__title {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.price__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price__inner-name {
+  font-size: 18px;
+}
+
+.price__inner-price {
+  color: #FAD686;
+  font-weight: 600;
+  -webkit-text-stroke: 0.5px #FAD686;
+  text-shadow: #FAD686 0 0 15px;
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px 30px;
+  place-items: center;
+  padding-top: 30px;
+}
+
+.contact__link {
+  margin-right: auto;
+  margin-left: 0;
+  font-size: 20px;
+}
+
+.contact__title {
+  font-size: 40px;
+}
+
+.contact__inner {
+  margin-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contact__inner-link {
+  color: #fff;
+}
+
+.contact__inner-link::after {
+  background-color: #fff;
+}
+
+.contact__inner-link:hover::after {
+  background-color: #fff;
+}
+
+.contact__inner-text {
+  color: #fff;
 }
 
 @media (max-width: 991.98px) {
@@ -800,6 +970,35 @@ nav {
         -ms-transform: scale(0.8);
             transform: scale(0.8);
   }
+
+  .price__wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .contact__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .contact__link {
+    margin: 3% auto;
+  }
+
+  .contact__title {
+    font-size: 34px;
+  }
+
+  .contact__inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -839,5 +1038,22 @@ nav {
   .swiper-button-next {
     width: 40px;
     height: 40px;
+  }
+
+  .price__item {
+    padding: 20px;
+  }
+
+  .price__title {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+
+  .price__inner-name {
+    font-size: 16px;
+  }
+
+  .contact__title {
+    font-size: 30px;
   }
 }
