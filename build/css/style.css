@@ -806,6 +806,10 @@ nav {
   color: #fff;
 }
 
+.haircuts {
+  background: rgba(70, 70, 70, 0.1);
+}
+
 @media (max-width: 991.98px) {
   .logo-pc {
     display: block;
