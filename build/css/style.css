@@ -291,8 +291,6 @@ nav {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-text-stroke: 0px #FAD686;
-  text-shadow: #FAD686 0 0 15px;
 }
 
 .logo img {
@@ -349,8 +347,6 @@ nav {
 
 .menu__item-link:hover {
   color: #FAD686;
-  -webkit-text-stroke: 0px #FAD686;
-  text-shadow: #FAD686 0 0 15px;
 }
 
 .burger {
@@ -386,9 +382,7 @@ nav {
   font-size: clamp(1.313rem, 0.661rem + 2.82vw, 3.125rem);
   text-transform: uppercase;
   letter-spacing: 3px;
-  -webkit-text-stroke: 2px #FAD686;
-  text-shadow: #FAD686 0 0 25px;
-  color: transparent;
+  color: #FAD686;
 }
 
 .hero__link {
@@ -408,8 +402,7 @@ nav {
   letter-spacing: 3px;
   text-align: center;
   margin: 3% auto;
-  -webkit-text-stroke: 1px #FAD686;
-  text-shadow: #FAD686 0 0 25px;
+  color: #FAD686;
 }
 
 .hero__text {
@@ -423,9 +416,7 @@ nav {
   max-width: 660px;
   width: 100%;
   margin: 0 auto;
-  -webkit-text-stroke: 1px white;
-  text-shadow: white 0 0 25px;
-  color: transparent;
+  color: #fff;
 }
 
 .case-2 {
@@ -753,8 +744,6 @@ nav {
 .price__inner-price {
   color: #FAD686;
   font-weight: 600;
-  -webkit-text-stroke: 0.5px #FAD686;
-  text-shadow: #FAD686 0 0 15px;
 }
 
 .contact__wrapper {
