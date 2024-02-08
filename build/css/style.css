@@ -136,12 +136,17 @@ h6 {
   padding: 0 20px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   line-height: 1.1;
   color: #fff;
   background-color: #000;
+  scroll-behavior: smooth !important;
 }
 
 body.locked {

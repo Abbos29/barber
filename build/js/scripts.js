@@ -74,6 +74,7 @@ const swiperSlider = new Swiper('.slider__swiper', {
     slidesPerView: 1.3,
     spaceBetween: 20,
     loop: true,
+    // autoHeight: true,
 
 
     breakpoints: {

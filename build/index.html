@@ -34,10 +34,10 @@
                 </div>
 
                 <ul class="menu">
-                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>Главная</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>О нас</a></li>
+                    <li class="menu__item"><a href="#about" class="menu__item-link link" data-scroll>О нас</a></li>
+                    <li class="menu__item"><a href="#reviews" class="menu__item-link link" data-scroll>Отзывы</a></li>
                     <div class="logo">
-                        <a href="#">
+                        <a href="index.html">
                             <div class="logo-left">
                                 <span>CLAN⬩Z</span>
                                 <p>est.</p>
@@ -49,8 +49,8 @@
                             </div>
                         </a>
                     </div>
-                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>Барберы</a></li>
-                    <li class="menu__item"><a href="#" class="menu__item-link link" data-scroll>Услуги</a></li>
+                    <li class="menu__item"><a href="#barbers" class="menu__item-link link" data-scroll>Барберы</a></li>
+                    <li class="menu__item"><a href="#contacts" class="menu__item-link link" data-scroll>Контакты</a></li>
                 </ul>
                 <div class="burger">
                     <span></span>
@@ -71,7 +71,7 @@
                 МУЖЧИНЫ
             </h1>
 
-            <a class="hero__link link" href="https://b675679.alteg.io/company/638637/menu?o=s9200758">ОНЛАЙН ЗАПИСЬ</a>
+            <a class="hero__link link" target="_blank" href="https://b675679.alteg.io/company/638637/menu?o=s9200758">ОНЛАЙН ЗАПИСЬ</a>
 
             <p class="hero__text">Создаем стиль, формируем характер, придавая мужчинам уверенность в каждом взгляде.</p>
         </div>
@@ -80,15 +80,16 @@
 </div>
 
 <!-- Case-1 -->
-<section class="case case-1">
+<section class="case case-1" id="about">
     <div class="container">
         <div class="case__wrapper">
             <div class="case__item">
-                <h2 class="section-title">Title</h2>
+                <h2 class="section-title">О нас</h2>
 
-                <h3 class="case__title">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="case__title">Качество, стиль и комфорт!</h3>
 
-                <p class="case__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque dolore optio culpa, similique omnis.</p>
+                <p class="case__text">У нас работают только квалифицированные барберы с многолетним опытом, многочисленными положительными отзывами и со своим наработанным методом работы!
+                </p>
             </div>
 
             <div class="case__img">
@@ -100,7 +101,7 @@
 </section>
 
 <!-- Case-2 -->
-<section class="case case-2">
+<section class="case case-2" id="services">
     <div class="container">
         <div class="case__wrapper">
 
@@ -110,11 +111,11 @@
             </div>
             
             <div class="case__item">
-                <h2 class="section-title">Title</h2>
+                <h2 class="section-title">Услуги</h2>
 
-                <h3 class="case__title">Lorem ipsum dolor sit amet.</h3>
+                <h3 class="case__title">Стрижка с душой и стилем</h3>
 
-                <p class="case__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo eaque dolore optio culpa, similique omnis.</p>
+                <p class="case__text">Доверьте свою прическу профессионалам! У нас уютная атмосфера, качественные услуги и идеальный стриж. повседневной суете, наслаждайтесь заботой о себе с Clan-Z</p>
             </div>
 
             
@@ -125,21 +126,19 @@
 
 
 <!-- Barbers -->
-<section class="barbers">
+<section class="barbers" id="barbers">
     <div class="container">
         <div class="barbers__wrapper">
-            <h2 class="barbers__title hero__title">Barbers</h2>
-
+            <h2 class="barbers__title hero__title">Барберы</h2>
             <div class="barbers__inner">
                 <div class="barbers__item">
                     <div class="barbers__img">
                         <img src="./img/barber-3.jpg" alt="barber clanz barbershop alay ps5 ps4 haircut">
                         <div class="barbers__info">
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, rerum quaerat. Expedita aliquam magni iste.</p>
+                            <h3>Ойбек</h3>
+                            <p>Ойбек постиг мастерство в одном из лучших барбершопов Москвы, более 10 лет опыта работы. Отлично ладит как с детьми, так и со взрослыми. Просто попробуйте и вы со 100% вероятностью останетесь довольны!</p>
                         </div>
                     </div>
-
                     <!-- <div class="barbers__box">
                         <a class="barbers__box-link" href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -164,19 +163,20 @@
                                 
                         </a>
                     </div> -->
-
                 </div>
-
                 <div class="barbers__item">
                     <div class="barbers__img">
                         <img src="./img/barber-55.jpg" alt="barber clanz barbershop alay ps5 ps4 haircut">
-
                         <div class="barbers__info">
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, rerum quaerat. Expedita aliquam magni iste.</p>
+                            <h3>Юрий</h3>
+                            <p>
+                                Юрий - опытный барбер с 15-летним стажем работы в индустрии мужских стрижек и бритья.
+
+                                Он уделяет особое внимание классическим и современным мужским стрижкам, бритью бороды и формированию естественного образа.
+                                
+                            </p>
                         </div>
                     </div>
-
                     <!-- <div class="barbers__box">
                         <a class="barbers__box-link" href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,19 +201,15 @@
                                 
                         </a>
                     </div> -->
-
                 </div>
-
                 <div class="barbers__item">
                     <div class="barbers__img">
                         <img src="./img/barber-44.jpg" alt="barber clanz barbershop alay ps5 ps4 haircut">
-
                         <div class="barbers__info">
-                            <h3>Name</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, rerum quaerat. Expedita aliquam magni iste.</p>
+                            <h3>Шохрух</h3>
+                            <p>Шохрух - опытный барбер с 8-летним стажем работы в индустрии стиля и мужских стрижек. Он специализируется на классических и современных мужских стрижках, бритье бороды, уходе за волосами и бородой, а также на создании образа для каждого своего клиента.</p>
                         </div>
                     </div>
-
                     <!-- <div class="barbers__box">
                         <a class="barbers__box-link" href="#">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -238,18 +234,18 @@
                                 
                         </a>
                     </div> -->
-
                 </div>
             </div>
         </div>
     </div>
 </section>
 
+
 <!-- Slider -->
-<section class="slider">
+<section class="slider" id="reviews">
     <div class="container">
         <div class="slider__wrapper">
-            <h2 class="slider__title hero__title">Slider</h2>
+            <h2 class="slider__title hero__title">Отзывы</h2>
 
         </div>
     </div>
@@ -258,76 +254,42 @@
         <div class="swiper slider__swiper">
             <div class="swiper-wrapper slider__swiper-wrapper">
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-1.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-1.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-2.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-2.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-3.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-3.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-4.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-4.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-5.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-5.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-6.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-6.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-7.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-7.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-8.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-8.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
                 <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-9.jpg" alt="slide barbershop clanz alay bazar hair cut">
+                    <img class="slider__img" src="./img/otziv-9.png" alt="slide barbershop clanz alay bazar hair cut">
                 </div>
 
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-10.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
 
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-11.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-12.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-13.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-14.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-15.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-16.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-17.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-18.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
             </div>
             <div class="swiper-pagination"></div>
 
@@ -352,7 +314,7 @@
 <section class="price">
     <div class="container">
 
-        <h2 class="hero__title">Price List</h2>
+        <h2 class="hero__title">ЦЕНЫ</h2>
 
         <div class="price__wrapper">
             <div class="price__item">
@@ -515,10 +477,10 @@
 </section>
 
 <!-- Contact -->
-<section class="contact">
+<section class="contact" id="contacts">
     <div class="container">
 
-        <div class="hero__title">Contacts</div>
+        <div class="hero__title">Контакты</div>
 
         <div class="contact__wrapper">
 
@@ -533,8 +495,8 @@
                 <div class="contact__inner">
 
                     <p class="contact__inner-text">Режим работы пн-пт: 09:00 - 18:00</p>
-                    <a class="contact__inner-link link" href="#">+998 (33) 222-33-90</a>
-                    <a class="contact__inner-link link" href="#">info@gmail.com</a>
+                    <a class="contact__inner-link link" target="_blank" href="tel:+998971119889">+998 97 111 98 89</a>
+                    <a class="contact__inner-link link" target="_blank" href="https://t.me/Clan_Z_Barber">Telegram</a>
                 </div>
 
             </div>
@@ -544,106 +506,7 @@
 </section>
 
 <!-- Haircuts -->
-<section class="haircuts">
-    <div class="container">
-        <div class="haircuts__wrapper">
-            <h2 class="haircuts__title hero__title">Haircuts</h2>
 
-        </div>
-    </div>
-
-    <div class="container-max">
-        <div class="swiper slider__swiper">
-            <div class="swiper-wrapper slider__swiper-wrapper">
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-1.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-2.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-3.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-4.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-5.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-6.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-7.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-8.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-9.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-10.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-11.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-12.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-13.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-14.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-15.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-16.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-17.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-
-                <div class="swiper-slide slider__slide">
-                    <img class="slider__img" src="./img/slide-18.jpg" alt="slide barbershop clanz alay bazar hair cut">
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-
-            <div class="swiper-button-prev">
-                <svg width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0.939339 10.9393C0.353554 11.5251 0.353554 12.4749 0.939339 13.0607L10.4853 22.6066C11.0711 23.1924 12.0208 23.1924 12.6066 22.6066C13.1924 22.0208 13.1924 21.0711 12.6066 20.4853L4.12132 12L12.6066 3.51472C13.1924 2.92893 13.1924 1.97919 12.6066 1.3934C12.0208 0.807611 11.0711 0.807611 10.4853 1.3934L0.939339 10.9393ZM37 10.5L2 10.5V13.5L37 13.5V10.5Z" fill="white"/>
-                </svg>
-            </div>
-
-            <div class="swiper-button-next">
-                <svg width="37" height="24" viewBox="0 0 37 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M36.0607 10.9393C36.6464 11.5251 36.6464 12.4749 36.0607 13.0607L26.5147 22.6066C25.9289 23.1924 24.9792 23.1924 24.3934 22.6066C23.8076 22.0208 23.8076 21.0711 24.3934 20.4853L32.8787 12L24.3934 3.51472C23.8076 2.92893 23.8076 1.97919 24.3934 1.3934C24.9792 0.807611 25.9289 0.807611 26.5147 1.3934L36.0607 10.9393ZM0 10.5L35 10.5V13.5L0 13.5L0 10.5Z" fill="white"/>
-                </svg>
-            </div>
-
-        </div>
-    </div>
-</section>
 
 
 
