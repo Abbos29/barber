@@ -254,6 +254,35 @@ section {
   background-color: #FAD686;
 }
 
+.mus {
+  position: fixed;
+  max-width: 300px;
+  width: 100%;
+  margin: 0 auto;
+  display: none;
+  height: 420px;
+  inset: 0;
+  top: 100px;
+  -webkit-box-shadow: 1px 1px 30px 5px pink;
+          box-shadow: 1px 1px 30px 5px pink;
+  background-color: #fff;
+}
+
+.mus p {
+  text-align: center;
+  padding: 10px 0;
+  color: #000;
+  font-weight: 600;
+}
+
+.mus img {
+  width: 100%;
+}
+
+.mus.open {
+  display: block;
+}
+
 nav {
   overflow: hidden;
 }

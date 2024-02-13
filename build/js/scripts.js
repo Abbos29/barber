@@ -92,3 +92,18 @@ const swiperSlider = new Swiper('.slider__swiper', {
         }
     }
 });
+
+
+
+const like = document.querySelector('.like');
+const mus = document.querySelector('.mus');
+let clickCount = 0;
+
+like.addEventListener('click', () => {
+    clickCount++;
+
+    if (clickCount === 3) {
+        mus.classList.toggle('open');
+        // clickCount = 0; // Сбросить счетчик кликов после трех кликов
+    }
+});
